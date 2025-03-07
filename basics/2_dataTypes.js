@@ -35,6 +35,9 @@ array
 const result ={name, age, isLogedIn, isAdmin, isSeller}
 // console.table(result)
 
+
+
+
 //*********** dataType conversion *******************/
 const score = "55"
 // console.log(typeof score ,score)
