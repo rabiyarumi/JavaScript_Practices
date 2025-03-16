@@ -23,6 +23,9 @@ symble => unique value
 const biodata = {name: "Sidra", age: 1 , gender: "Female"}
 const arr = [3, 45, 56,2, 23, 34, 9, 78, 79]
 
+console.log(typeof(biodata)) //object
+console.log(typeof(arr)) //object
+
 //*********** non-premitive dataType *******************/
 /*
 object
@@ -83,4 +86,4 @@ const convertToBolean= Boolean(booleanValue)
 
 const num = NaN;
 const converToString = String(num)
-console.log(typeof(converToString), converToString)
+// console.log(typeof(converToString), converToString)
