@@ -7,7 +7,7 @@ const profession = "Developer"
 // console.log(`My name is ${name} and I am a ${profession}`)
 
 
-const gameName = new Object("Subway Surfers")
+const gameName = new Object("Subway Surfers Pro")
 // console.log(gameName[0]) // S
 // console.log(name[0]) // A
 // console.log(gameName.__proto__) // {}
@@ -27,12 +27,29 @@ const newString = gameName.substring(0, 5)
 const onotherString = gameName.slice(-19, 8) //Subway S
 // console.log(onotherString) // Subwa  ---------it substract from 0 to 4 index not includ  no. 5 index
 
+
 //------------ "trim" it remove all unnecceary spaces 
 const newName = "   Sidra       "
-console.log(newName)
-console.log(newName.trim())
+// console.log(newName)
+// console.log(newName.trim())
+
 
 //------ "replace" it replace with onother value
 const url = "https://crowd%20cube.com"
-console.log(url) // https://crowd%20cube.com
-console.log(url.replace("%20", "-")) // https://crowd-cube.com
+// console.log(url) // https://crowd%20cube.com
+// console.log(url.replace("%20", "-")) // https://crowd-cube.com
+
+
+//-----------includes to check if a keyword is included in the string or not
+// console.log(gameName.includes("Subway")) //true
+// console.log(gameName.includes("subway")) //false
+// console.log(gameName.includes("dsfdjfk")) //false
+
+
+//--------- "split" it convert a string  to an array based on something like "", -, "," 
+console.log(gameName.split("")) //['S', 'u', 'b', 'w', 'a','y', ' ', 'S', 'u', 'r','f', 'e', 'r', 's', ' ','P', 'r', 'o']
+console.log(gameName.split(" ")) //[ 'Subway', 'Surfers', 'Pro' ]
+    
+    
+    
+    
