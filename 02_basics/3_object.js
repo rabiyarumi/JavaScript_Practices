@@ -6,8 +6,8 @@
 const mySym = Symbol("Key1")
 
 const jsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary", // we can't acces this value with dot "."
+    name: "Sidra",
+    "full name": "Sidra Farazi", // we can't acces this value with dot "."
     [mySym]: "mykey1",
     age: 18,
     location: "Jaipur",
@@ -28,6 +28,17 @@ jsUser.location = "UK"
 console.log(jsUser.location) //UK
 
 // we can freez the object so it become unchangable
-Object.freeze(jsUser)
-jsUser.location = "Munshiganj"
-console.log(jsUser.location) // UK // it won't change as Munshiganj couse the object is freez now
+// Object.freeze(jsUser)
+// jsUser.location = "Munshiganj"
+// console.log(jsUser.location) // UK // it won't change as Munshiganj couse the object is freez now
+
+jsUser.greetings = function(){
+    console.log("Hello world")
+}
+console.log(jsUser.greetings) // [Function (anonymous)]
+console.log(jsUser.greetings()) //Hello world
+
+jsUser.greetings2 = function(){
+    console.log(`Hello ${this.name}`)
+}
+console.log(jsUser.greetings2()) //Hello Sidra
